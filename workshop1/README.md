@@ -12,6 +12,39 @@ real_world_rag/
 └── query_documents.py   # Script to query the system with natural language
 ```
 
+## Setup
+
+### Step 1: Create and Activate Virtual Environment
+
+Create a Python virtual environment to isolate project dependencies:
+
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+# venv\Scripts\activate
+```
+
+### Step 2: Install Dependencies
+
+Install the required packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3: Set Up Environment Variables (Optional)
+
+The system uses a default Google API key, but you can set your own:
+
+```bash
+export GOOGLE_API_KEY=your_google_api_key_here
+```
+
 ## How to Use
 
 ### Step 1: Add Your Documents
@@ -48,14 +81,6 @@ This will start an interactive session where you can ask questions about your do
 4. Return a response that incorporates knowledge from your documents
 
 Type 'exit' or 'quit' to end the session.
-
-## Environment Variables
-
-The system uses a default Google API key, but you can set your own:
-
-```bash
-export GOOGLE_API_KEY=your_google_api_key_here
-```
 
 ## Customization
 
